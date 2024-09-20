@@ -22,5 +22,3 @@ function showSection(sectionId) {
 
 
 
-
-

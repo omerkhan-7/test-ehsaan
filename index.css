@@ -42,9 +42,7 @@ nav a:hover {
 }
 
 
-
-/* Main container for the form section */
-.container1 {
+.form-container {
     background-color:  #f4f4f4;;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -55,77 +53,40 @@ nav a:hover {
     padding-top: 70px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 
 }
 
-/* Style the tabs and align them at the top */
-.tabs {
-    display: flex;
-    justify-content: space-evenly;
-    background: linear-gradient(to right, #ffc107, #ff9800);
-    padding: 10px;
-    
-}
-
-/* Style for the tab buttons */
-.tab {
-    flex: 1;
-    border: none;
-    background: transparent;
-    color: #333;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-    text-transform: uppercase;
-}
-
-/* Active tab styling */
-.tab.active {
-    color: #fff;
-    font-weight: bold;
-}
-
-/* Booking form styles */
-.booking-form {
+.sidebar {
+    background: linear-gradient(to bottom, #ffa500, #ff8c00);
     padding: 20px;
-    display: none;
-}
-
-/* Show the active form section */
-.booking-form.active-section {
-    display: block;
-}
-
-/* Style each form group */
-.form-group {
-    margin-bottom: 25px;
-}
-
-.form-group input,
-.form-group select {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Style the submit button */
-.submit-btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #ffc107;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
 }
 
-.submit-btn:hover {
-    background-color: #ff9800;
+
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    background-color: #ffa500;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ff8c00;
 }
 
 /* Responsive styling */
