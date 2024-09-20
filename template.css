@@ -1,0 +1,455 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Header styling */
+.header {
+    background-color: black;
+    color: yellow;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: solid;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+
+
+/* Main container for the form section */
+.container1 {
+    background-color:  #f4f4f4;;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* Style the tabs and align them at the top */
+.tabs {
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(to right, #ffc107, #ff9800);
+    padding: 10px;
+    
+}
+
+/* Style for the tab buttons */
+.tab {
+    flex: 1;
+    border: none;
+    background: transparent;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-transform: uppercase;
+}
+
+/* Active tab styling */
+.tab.active {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Booking form styles */
+.booking-form {
+    padding: 20px;
+    display: none;
+}
+
+/* Show the active form section */
+.booking-form.active-section {
+    display: block;
+}
+
+/* Style each form group */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the submit button */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #ff9800;
+}
+
+/* Responsive styling */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 20px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .container1 {
+        width: 90%;
+    }
+}
+
+
+/* Card styles */
+.card1, .card2 {
+    width: 300px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column; /* Ensure proper card layout */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    transition: transform 0.3s ease;
+    
+}
+
+.card1:hover, .card2:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  
+}
+
+/* Position styles for list elements */
+.position {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.position li {
+    margin: 0;
+}
+
+.position a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 20px;
+    
+}
+
+.position a:hover {
+    color: #007bff;
+}
+
+/* Separator and heading styles */
+.separator {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+h2::before, h2::after {
+    content: "";
+    display: inline-block;
+    width: 100px; /* Line width */
+    height: 1px; /* Line thickness */
+    background-color: #333; /* Line color */
+    position: relative; /* Corrected positioning */
+    top: 50%; /* Center the lines vertically with the text */
+    transform: translateY(-50%); /* Adjusts lines vertically */
+    
+}
+
+h2::before {
+    margin-right: 10px; /* Space between text and line */
+}
+
+h2::after {
+    margin-left: 10px; /* Space between text and line */
+}
+
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    background-color: #f4f4f4;
+    margin-top: 50px;
+}
+
+
+.card3, .card4, .card5, .card6 {
+    width: 230px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 370px;
+}
+
+.card3:hover, .card4:hover, .card5:hover, .card6:hover {
+    transform: scale(1.05);
+}
+
+
+.card3 img {
+    width: 300px;
+    height: 300px;
+    padding-right: 50px;
+    object-fit: cover;
+}
+
+.card4 img {
+    width: 300px;
+    height: 300px;
+    padding-right: 50px;
+    object-fit: cover;
+}
+
+.card5 img {
+    width: 300px;
+    height: 300px;
+    padding-right: 50px;
+    object-fit: cover;
+}
+
+.card6 img {
+    width: 300px;
+    height: 300px;
+    padding-right: 50px;
+    object-fit: cover;
+}
+
+
+.card-content {
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.card-content h3 {
+    font-size: 18px;
+    color: #333; 
+    line-height: 1.4;
+}
+
+.card-content .date {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f0f0f0;
+    background-color: #f9f9f9;
+}
+
+.card-footer .category {
+    font-size: 14px;
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.heading{
+    text-align: center; /* Center the text */
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    position: static; 
+    display: inline-block;
+    margin-bottom: 60px;
+    
+}
+
+
+h2::before, h2::after {
+    content: ""; /* No text, just lines */
+    display: inline-block;
+    width: 100px; /* Line width */
+    height: 1px; /* Line thickness */
+    background-color: #333; /* Line color */
+    position: static;
+    top: 50%; /* Center the lines vertically with the text */
+}
+
+h2::before {
+    left: -350px; /* Position the line before the text */
+    padding-left: 150px;
+    margin-bottom: 15px;
+}
+
+h2::after {
+    right: -120px; /* Position the line after the text */
+    padding-right: 150px;
+    margin-bottom: 15px;
+}
+
+.card7, .card8, .card9, .card10 {
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 220px;
+}
+
+.card7:hover, .card8:hover, .card9:hover, .card10:hover {
+    transform: scale(1.05);
+}
+
+
+.card7 img {
+    width: 250px;
+    height: 220px;
+    padding-right: 10px;
+    object-fit: cover;
+}
+
+.card8 img {
+    width: 250px;
+    height: 220px;
+    padding-right: 10px;
+    object-fit: cover;
+}
+
+.card9 img {
+    width: 250px;
+    height: 220px;
+    padding-right: 10px;
+    object-fit: cover;
+}
+
+.card10 img {
+    width: 250px;
+    height: 220px;
+    padding-right: 10px;
+    object-fit: cover;
+}
+
+
+.card-content {
+    padding: 0px;
+    padding-right: 30px;
+}
+
+.card-content p {
+    font-size: 10px;
+    color: #333;
+    margin: 0 0 15px;
+    line-height: 1.4;
+}
+
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f0f0f0;
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+}
+
+.card-footer .category {
+    font-size: 14px;
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    padding: 10px;
+}

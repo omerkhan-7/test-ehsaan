@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Template</title>
+    <link rel="stylesheet" href="template.css">
+    <script src="script.js"></script>
+
+    
+</head>
+<body>
+    <header class="header">
+        <h1>HOLIDAY</h1>
+        <nav>
+            <ul class="position">
+                <li><a href="home">HOME</a></li>
+                <li><a href="about">ABOUT</a></li>
+                <li><a href="our tours">OUR TOURS</a></li>
+                <li><a href="contact">CONTACTS</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+        <section>
+            <div class="container1">
+
+
+                <div class="tabs">
+                    <button class="tab active" onclick="showSection('hotel')">Hotel</button>
+                    <button class="tab" onclick="showSection('car-rental')">Car Rental</button>
+                </div>
+
+
+                <form action="https://api.web3forms.com/submit" method="POST" id="hotel" class="booking-form active-section" onsubmit="handleSubmit(event, 'hotel')">
+                    <div class="form-group">
+                        <select name="Hotel" required>
+                            <option value="" disabled selected>-- Select Hotel --</option>
+                            <option value="hotel1">Hotel 1</option>
+                            <option value="hotel2">Hotel 2</option>
+                            <option value="hotel3">Hotel 3</option>
+                        </select>
+                    </div>
+                    <input type="hidden" name="access_key" value="28043f19-4a9f-4c4a-94ea-dbde81fc5f38">
+                    <div class="form-group">
+                        <input type="date" placeholder="Check-in Date" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" placeholder="Check-out Date" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="guests" required>
+                            <option value="" disabled selected>-- Guests --</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                        </select>
+                    </div>
+                    <button type="button" onclick="showOutput()">Check Now</button>
+                </form>
+
+                <div id="output" class="output" style="display: none;">
+                    <h3>Booking Details:</h3>
+                    <p><strong>Hotel:</strong> <span id="outputHotel"></span></p>
+                    <p><strong>Check-in Date:</strong> <span id="outputCheckIn"></span></p>
+                    <p><strong>Check-out Date:</strong> <span id="outputCheckOut"></span></p>
+                    <p><strong>Guests:</strong> <span id="outputGuests"></span></p>
+                </div>
+        
+                <form action="https://api.web3forms.com/submit" method="POST" id="car-rental" class="booking-form" onsubmit="handleSubmit(event, 'car-rental')">
+                    <div class="form-group">
+                        <select name="car_type" required>
+                            <option value="" disabled selected>-- Select Car Type --</option>
+                            <option value="economy">Economy</option>
+                            <option value="suv">SUV</option>
+                            <option value="luxury">Luxury</option>
+                        </select>
+                    </div>
+                    <input type="hidden" name="access_key" value="28043f19-4a9f-4c4a-94ea-dbde81fc5f38">
+                    <div class="form-group">
+                        <input type="date" placeholder="Pick-up Date" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" placeholder="Drop-off Date" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="Pick-up_location" required>
+                            <option value="" disabled selected>-- Pick-up Location --</option>
+                            <option value="location1">Location 1</option>
+                            <option value="location2">Location 2</option>
+                            <option value="location3">Location 3</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-btn">Check Now</button>
+                </form>
+            
+
+
+
+                <div class="card1">
+                    <img src="https://www.aptouring.com.au/-/media/apt-responsive-website/europe/hero-panel-12-5/france-12-5/hc-a-eu-france-paris-arc-de-triomphe-end-of-illuminated-champs-elysees-street-114479500-s-12-5.jpg?h=800&w=1920&la=en-OTH&hash=F3A3A60766826B910E368F5A04283E1F78B61837" alt="Card image" class="card-img">
+                    <div class="card-content">
+                        <ul class="position">
+                            <li><a href="paris">Paris</a></li>
+                            <li><a href="amount">$4,200</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="card2">
+                    <img src="https://www.state.gov/wp-content/uploads/2022/01/shutterstock_248799484-scaled.jpg" alt="Card image" class="card-img" >
+                    <div class="card-content">
+                        <ul class="position">
+                            <li><a href="new-york">New York</a></li>
+                            <li><a href="amount">$6,600</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+            
+                
+        <section>      
+            
+            <div class="container2">
+
+
+                <div class="separator">       
+                    <h2>LOREM IPSUM DOLOR</h2>
+                </div>
+                    
+                <div class="card3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzHB4oCsWf1ZBarQPr-Xx4djVSoR6n--x2Fg&s" alt="Image 1">
+                    <div class="card-content">
+                        <h6>PROIN GRAVIDA NIBHVEL<br>LOREM QUIS BIND</h6>
+                        <p class="date">28 MARCH 2024</p>
+                        <div class="card-footer">
+                            <span class="category">TRAVEL</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlYnt1-rIUB4Dmi2n9ANv9IVK74lGkh_owiA&s" alt="Image 2">
+                    <div class="card-content" >
+                        <h6>PROIN GRAVIDA NIBHVEL<br>LOREM QUIS BIND</h6>
+                        <p class="date">26 MARCH 2024</p>
+                        <div class="card-footer">
+                            <span class="category">TRAVEL</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card5">
+                    <img src="https://i.dailymail.co.uk/i/pix/2016/04/28/20/339F09F500000578-0-image-a-1_1461873416367.jpg" alt="Image 3">
+                    <div class="card-content">
+                        <h6>PROIN GRAVIDA NIBHVEL<br>LOREM QUIS BIND</h6>
+                        <p class="date">24 MARCH 2024</p>
+                        <div class="card-footer">
+                            <span class="category">TRAVEL</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card6">
+                    <img src="https://cdn.mos.cms.futurecdn.net/AWGTvX4SCqdWX2keU8fRwW.jpg" alt="Image 4">
+                    <div class="card-content">
+                        <h6>PROIN GRAVIDA NIBHVEL<br>LOREM QUIS BIND</h6>
+                        <p class="date">22 MARCH 2024</p>
+                        <div class="card-footer">
+                            <span class="category">TRAVEL</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container3">
+                <div class="heading">
+                    <h2>Popular Packages</h2>
+                </div>
+
+                <div class="card7">
+                    <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/02/07/13/Mesut-Ozil.jpg" alt="Image 1">
+                    <div class="card-content">
+                        <p>Proin gravida nibhvell velit auctor <br> aliquet. Aenean sollicitudin, lorem quis <br> bibendum auctor, nisi elit consequat <br>ipsum</p>
+                        <div class="card-footer">
+                            <span class="category">TRAVEL</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card8">
+                    <img src="https://images.news18.com/ibnlive/uploads/2021/12/luka-modric.jpg"  alt="Image 1">
+                    <div class="card-content">
+                        <p>Proin gravida nibhvell velit auctor <br> aliquet. Aenean sollicitudin, lorem quis <br> bibendum auctor, nisi elit consequat <br>ipsum</p>
+                        <div class="card-footer">
+                            <span class="category">TRAVEL</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card9">
+                    <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/3102/production/_129964521_karim_benzema.jpg" alt="Image 1">
+                    <div class="card-content">
+                        <p>Proin gravida nibhvell velit auctor <br> aliquet. Aenean sollicitudin, lorem quis <br> bibendum auctor, nisi elit consequat <br>ipsum</p>
+                        <div class="card-footer">
+                            <span class="category">TRAVEL</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card10">
+                    <img src="https://img.goodfon.com/wallpaper/big/9/f1/wallpaper-gareth-bale-real-madrid-cf-player-sport-football.webp" alt="Image 1">
+                    <div class="card-content">
+                        <p>Proin gravida nibhvell velit auctor <br> aliquet. Aenean sollicitudin, lorem quis <br> bibendum auctor, nisi elit consequat <br>ipsum</p>
+                        <div class="card-footer">
+                            <span class="category">TRAVEL</span>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Ehsaan Tech | Designed by M.Omer khan</p>
+    </footer>
+</body>
+</html>
+            
+                    
+            
+            
+        
+                
+            
+            
+
+
+
+
+    
